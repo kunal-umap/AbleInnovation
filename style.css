@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+  
+::selection {
+    color: red;
+    background: yellow;
+}
+
+body {
+    margin: 0px;
+    background: black;
+}
+.head {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    color: #fff;
+}
+.head > img {
+    height: 3vh;
+    min-height: 15px;
+    padding: 10px 0px 10px 10px;
+}
+.heading {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 12px;
+    padding-left: 25px;
+}
+.hero {
+    padding: 0px;
+    margin: 0px;
+}
+.vdo {
+    width: 100vw;
+}
+.sect2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 60px;
+}
+.card1 {
+    /* background: #ffd701; */
+    color: #ffd701;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.missHed {
+    color: white;
+    font-size: 32px;
+    margin-top: 0px;
+}
+.missiomPara {
+    font-size: 18px;
+    width: 70vw;
+    max-width: 900px;
+}
+.abtImg {
+    width: 85vw;
+}
+.sect3 {
+    background: #ffd701;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.sect3Hed {
+    font-size: 38px;
+    font-weight: 1000;
+}
+.card2 {
+    background: black;
+    border-radius: 8px;
+    padding: 28px;
+    padding-bottom: 5px;
+    width: 72vw;
+    /* margin: 22px 12vw 22px 12vw; */
+}
+.hedm {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+}
+.card2 p {
+    color: #ffd701;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-top: 4px;
+}
+.footer {
+    display: flex;
+}
+.foot1 {
+    flex: 1;
+}
+.foot1 h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0px;
+    padding-bottom: 4px;
+}
+.foot1 p {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 2px;
+    margin: 0px;
+}
+.foot2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px;
+    /* text-align: center; */
+}
+.foot2 a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    text-align: left;
+    width: 100px;
+}
+.foot2 a:hover {
+    color: #ffd701;
+}
+@media screen and (max-width: 622px) {
+    .abtImg {
+        width: 95vw;
+    }
+}
