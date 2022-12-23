@@ -38,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 40px;
+    padding: 20px;
     background: #ffd701;
 }
 .heroSec1, .heroSec2 {
@@ -69,6 +69,9 @@ body {
     font-size: 20px;
     font-weight: 400;
 }
+.heroTex4 {
+    font-size: 14px;
+}
 
 /* -------------SECTION-2--------------- */
 .sect2 {
@@ -83,28 +86,31 @@ body {
 }
 .card1 {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
     color: #ffd701;
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
+    padding-bottom: 30px;
+    margin: 10px;
     border-radius: 12px;
     text-align: center;
-    padding-bottom: 40px;
 }
 
-.cardSec2 img {
+/* .cardSec2 img {
     width: 35vw;
     padding: 8px;
-}
+    max-width: 200px;
+} */
 .missHed {
     color: white;
     font-size: 32px;
-    margin-top: 0px;
+    margin: 0px;
 }
 .missiomPara {
-    font-size: 18px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 0px;
+
 }
 .abtImg {
     width: 85vw;
@@ -112,7 +118,6 @@ body {
 }
 
 .vdoCrd {
-    background: linear-gradient(to bottom,#ebcf3b,#eed142,#dcb824,#caa11b);
     width: 100%;
     text-align: center;
     padding: 0px;
@@ -139,16 +144,19 @@ body {
 }
 .sect3Hed {
     font-size: 38px;
-    font-weight: 1000;
+    font-weight: 800;
+    margin-bottom: 16px;
 }
-.card2Sec1 img {
-    width: 40vw;
+.card2Sec1 iframe {
+    /* aspect-ratio: 16 / 9 */
+    /* width: 40vw; */
 }
 .solP {
     color: #000;
     padding: 0px;
     margin: 0px;
     max-width: 80vw;
+    margin-bottom: 20px;
 }
 .card2 {
     display: flex;
@@ -186,11 +194,11 @@ body {
     justify-content: center;
 }
 .GetAcc {
-    background: #ffd701;
+    /* background: #ffd701; */
     text-align: center;
     padding: 60px;
     margin: 0px;
-    width: 100%;
+    width: 98vw;
     flex: 1;
 }
 .TestiMo {
@@ -201,11 +209,16 @@ body {
 }
 .TestiMo > h2 {
     color: #fff;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin: 20px;
+    font-weight: 600;
+}
+.capt {
+    margin-top: 2px;
+    color: #fff;
 }
 .vdoS1 {
-    width: 80%;
+    width: 90%;
     max-width: 900px;
     max-height: 90vh;
     margin: 0px;
@@ -214,20 +227,24 @@ body {
 
 .footer {
     display: flex;
+    background: #ffd701;
+    padding: 25px;
 }
 .foot1 {
     flex: 1;
 }
 .foot1 h1 {
-    color: white;
+    color: #000;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    font-size: 38px;
     margin-bottom: 0px;
     padding-bottom: 4px;
 }
 .foot1 p {
-    color: white;
+    color: #000;
     text-align: center;
+    font-size: 13px;
     font-family: 'Nunito', sans-serif;
     padding-top: 2px;
     margin: 0px;
@@ -241,28 +258,29 @@ body {
     /* text-align: center; */
 }
 .foot2 a {
-    color: white;
+    color: #000;
     text-decoration: none;
     padding: 8px;
     text-align: left;
     width: 100px;
 }
 .foot2 a:hover {
-    color: #ffd701;
+    color: #fff;
 }
 .earlyAc {
+    background: #ffd701;
     font-size: 18px;
     text-decoration: none;
     color: black;
     padding: 12px;
     border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+    box-shadow: 2px 2px 8px rgba(251, 251, 251, 0.445);
 }
 .earlyAc:hover {
     background: #000;
-    color: #ffd701;
+    color: #fff;
     /* box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.719); */
-    box-shadow: inset -2px -2px 8px #ffd701;
+    /* box-shadow: inset -2px -2px 8px rgba(251, 251, 251, 0.445); */
 }
 @media screen and (max-width: 1020px) {
     .hedm {
@@ -288,8 +306,8 @@ body {
     .card2 {
         flex-direction: column;
     }
-    .card2Sec1 img {
-        width: 80vw;
+    .card2Sec1 iframe {
+        /* width: 80vw; */
         text-align: center;
     }
     .hedm {
@@ -299,7 +317,7 @@ body {
     .card2 p {
         padding-bottom: 0px;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
     }
     
 }
@@ -307,10 +325,22 @@ body {
     .cardSec2{
         display: none;
     }
+    .heroSec1 {
+        padding: 2px;
+    }
+    .solP {
+        font-size: 14px;
+    }
+    .capt {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 485px) {
     .hero {
         flex-direction: column;
+    }
+    .TestiMo > h2 {
+        font-size: 28px;
     }
 }
 .active {
