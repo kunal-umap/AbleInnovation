@@ -13,6 +13,7 @@
 body {
     margin: 0px;
     background: black;
+    overflow-x: hidden;
 }
 .head {
     margin: 0px;
@@ -33,12 +34,43 @@ body {
     padding-left: 25px;
 }
 .hero {
-    padding: 0px;
     margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background: #ffd701;
 }
-.vdo {
-    width: 100vw;
+.heroSec1, .heroSec2 {
+    flex: 1;
+    padding: 8px;
+    margin: 8px;
 }
+ .heroSec1 > p,
+ .heroSec2 > p {
+    color: #000;
+    text-align: center;
+    padding: 2px;
+    margin: 4px;
+ }
+.heroTex1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.heroTex2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.heroTex3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.heroTex3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* -------------SECTION-2--------------- */
 .sect2 {
     display: flex;
     align-items: center;
@@ -50,14 +82,20 @@ body {
     padding-bottom: 60px;
 }
 .card1 {
-    /* background: #ffd701; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: #ffd701;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     border-radius: 12px;
     text-align: center;
-    padding: 20px;
     padding-bottom: 40px;
+}
+
+.cardSec2 img {
+    width: 35vw;
+    padding: 8px;
 }
 .missHed {
     color: white;
@@ -66,47 +104,114 @@ body {
 }
 .missiomPara {
     font-size: 18px;
-    width: 70vw;
-    max-width: 900px;
+    padding: 20px;
 }
 .abtImg {
     width: 85vw;
+    margin-top: 50px;
 }
-.sect3 {
-    background: #ffd701;
+
+.vdoCrd {
+    background: linear-gradient(to bottom,#ebcf3b,#eed142,#dcb824,#caa11b);
+    width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+.vdoS {
+    width: 95vw;
+    max-width: 900px;
+    max-height: 90vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* ----------------SECTION-3-------------------- */
+.sect3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #ffd701;
+    text-align: center;
+    padding: 10px;
     padding-bottom: 40px;
 }
 .sect3Hed {
     font-size: 38px;
     font-weight: 1000;
 }
+.card2Sec1 img {
+    width: 40vw;
+}
+.solP {
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+    max-width: 80vw;
+}
 .card2 {
-    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffd701;
     border-radius: 8px;
     padding: 28px;
     padding-bottom: 5px;
-    width: 72vw;
-    /* margin: 22px 12vw 22px 12vw; */
+    padding-top: 10px;
 }
 .hedm {
-    color: white;
+    text-align: left;
     font-size: 18px;
     font-weight: 600;
     padding: 0px;
     margin: 0px;
 }
 .card2 p {
-    color: #ffd701;
+    text-align: left;
     font-size: 16px;
     padding-bottom: 20px;
     padding-top: 0px;
     margin-top: 4px;
 }
+.card2Sec2 {
+    padding: 30px;
+}
+/* --------------SECTION-4------------ */
+.sect4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.GetAcc {
+    background: #ffd701;
+    text-align: center;
+    padding: 60px;
+    margin: 0px;
+    width: 100%;
+    flex: 1;
+}
+.TestiMo {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    flex: 1;
+}
+.TestiMo > h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.vdoS1 {
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
+    margin: 0px;
+    padding: 0px;
+}
+
 .footer {
     display: flex;
 }
@@ -145,8 +250,69 @@ body {
 .foot2 a:hover {
     color: #ffd701;
 }
-@media screen and (max-width: 622px) {
+.earlyAc {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.719);
+}
+.earlyAc:hover {
+    background: #000;
+    color: #ffd701;
+    /* box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.719); */
+    box-shadow: inset -2px -2px 8px #ffd701;
+}
+@media screen and (max-width: 1020px) {
+    .hedm {
+        font-size: 16px;
+    }
+    .card2 p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .hedm {
+        font-size: 14px;
+    }
+    .card2 p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 822px) {
     .abtImg {
         width: 95vw;
     }
+    .card2 {
+        flex-direction: column;
+    }
+    .card2Sec1 img {
+        width: 80vw;
+        text-align: center;
+    }
+    .hedm {
+        text-align: center;
+        font-size: 16px;
+    }
+    .card2 p {
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 622px) {
+    .cardSec2{
+        display: none;
+    }
+}
+@media screen and (max-width: 485px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+.active {
+    display: none;
 }
