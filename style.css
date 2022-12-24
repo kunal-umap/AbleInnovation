@@ -4,7 +4,9 @@
     color: red;
     background: yellow;
 }
-  
+body, html {
+    overflow-x: hidden;
+}
 ::selection {
     color: red;
     background: yellow;
